@@ -1,6 +1,8 @@
 # Capacitor Sensor Project
 
-Materials of independent study of NYU 2024 Summer, working with Arvi Gjoka and directed by Daniele Panozzo. This project aims to create a trainning pipeline of simulation and deep learning for a capacitor based deformation sensor. Previous paper: https://arxiv.org/pdf/1804.04013.
+Materials of independent study of NYU 2024 Summer, working with Arvi Gjoka and directed by Daniele Panozzo. This project aims to create a trainning pipeline of simulation and deep learning for a capacitor based deformation sensor. 
+
+Previous paper: https://arxiv.org/pdf/1804.04013.
 
 ## Stage 1
 Accuradtely model both the mechanical deformation of the sensor and its effect on the capacitence of the embedded sensors, which involves:

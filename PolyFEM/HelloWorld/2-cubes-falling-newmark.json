@@ -1,0 +1,13 @@
+{
+    "common": "2-cubes-falling.json",
+    "materials": {
+        "E": 1e6
+    },
+    "time": {
+        "dt": 0.005,
+        "integrator": "ImplicitNewmark"
+    },
+    "contact": {
+        "friction_coefficient": 0
+    }
+}

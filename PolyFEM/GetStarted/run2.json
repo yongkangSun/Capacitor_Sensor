@@ -1,0 +1,25 @@
+{
+    "common": "run.json",
+    "materials": {
+        "type": "LinearElasticity",
+        "E": 210000,
+        "nu": 0.3
+    },
+
+    "boundary_conditions": {
+        "neumann_boundary": [{
+            "id": 3,
+            "value": [100, 0]
+        }],
+
+        "dirichlet_boundary": [{
+            "id": 1,
+            "value": [0.0, 0.0],
+            "dimension": [true, false]
+        }, {
+            "id": 4,
+            "dimension": [false, true],
+            "value": [0.0, 0.0]
+        }]
+    }
+}

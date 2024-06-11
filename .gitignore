@@ -1,0 +1,12 @@
+*.log
+*.tmp
+.DS_Store
+
+# temporary result of PolyFEM
+*.csv
+*.pvd
+*.csv
+*.vtm
+*.vtu
+sim.json
+

@@ -1,0 +1,32 @@
+{
+    "geometry": {
+        "advanced": {
+            "normalize_mesh": true
+        },
+        "mesh": "plate_hole.obj",
+        "surface_selection": {
+            "threshold": 1e-07
+        }
+    },
+
+    "materials": {
+        "type": "Laplacian"
+    },
+
+    "output": {
+        "json": "stats.json",
+        "paraview": {
+            "file_name": "<result.vtu>"
+        }
+    },
+
+    "preset_problem": {
+        "type": "Franke"
+    },
+
+    "solver": {
+        "linear": {
+            "solver": "Eigen::SparseLU"
+        }
+    }
+}

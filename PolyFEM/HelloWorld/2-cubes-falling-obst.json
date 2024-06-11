@@ -1,0 +1,28 @@
+{
+    "common": "2-cubes-falling.json",
+    "geometry": [{
+        "mesh": "cube.msh",
+        "transformation": {
+            "translation": [0, 3, 0]
+        },
+        "volume_selection": 1
+    }, {
+        "mesh": "triangle.obj",
+        "transformation": {
+            "translation": [-0.5, 1, -0.5],
+            "scale": 0.7
+        },
+        "surface_selection": 1,
+        "is_obstacle": true,
+        "extract": "points"
+    }, {
+        "mesh": "plane.obj",
+        "is_obstacle": true
+    }],
+    "boundary_conditions": {
+        "obstacle_displacements": [{
+            "id": 1,
+            "value": ["t", "t", "t"]
+        }]
+    }
+}

@@ -10,3 +10,9 @@
 *.vtu
 sim.json
 
+# large mesh file of TetGen
+*.mesh
+*.edge
+*.ele
+*.face
+*.node

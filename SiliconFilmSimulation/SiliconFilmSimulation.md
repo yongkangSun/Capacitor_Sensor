@@ -5,6 +5,7 @@ Simulate the deformation of silicon films with different material and geometry f
 From the original paper:
 
 * **Thickness** of the final sensor: $540 \mu m = 450 \mu m\ RTV + 90 \mu m\ Conductive\ Layer$. Component:
+  * Conductive layer: $45 \mu m * 2\ layers$ 
   * Protectice layer: $180 \mu m * 2\ layers$ 
   * Dielectric layer: $90 \mu m * 1\ layers$ 
 * **Young's modulus**: 

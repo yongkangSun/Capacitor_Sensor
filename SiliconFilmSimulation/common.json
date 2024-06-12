@@ -3,11 +3,14 @@
         "enabled": false
     },
 
+    "space": {
+        "discr_order": 2
+    },
+
     "solver": {
         "linear": {
         "solver": [
-            "Eigen::PardisoLDLT",
-            "Eigen::CholmodDecomposition"
+            "Eigen::AccelerateLDLT"
         ]
         },
         "nonlinear": {

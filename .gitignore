@@ -16,3 +16,4 @@ sim.json
 *.ele
 *.face
 *.node
+*.msh

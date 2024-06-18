@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_dir="20x20_sparse/dirichlet_y"
+target_dir="20x20_sparse/non-conductive"
 input_file="parameter.json"
 output_dir="result"
 

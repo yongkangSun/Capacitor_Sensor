@@ -51,53 +51,69 @@ Dirichlet_boundary, stretch the scilicon from `y` and `-y`, until double the len
 
     extra 1cm for both end are used for connection.
 
-  * **This setup could only test uniaxial deformation, what about stretch both $x$ and $y$ axis?**
+* **Arvi's material size:**
+
+  * Arvi's Sample size: 100000 * 100000 * 500 $\mu m$, (0.1m * 0.1m)
+  * Arvi's Simulation size: 120000 * 100000 * 500 $\mu m$, (0.12m * 0.1m)
+  * **Do we need to simulate how silicon film connect to the connector? Change boundary condition?**
 
 * **Chane all unit to si unit:** 
 
-  * tetrahedra model size: 250 * 450 * 5
+  * tetrahedra model size: 1200 * 1000 * 5: 
+
+    * Dense:
+
+      <img src="/Users/johnnnysun/Library/Application Support/typora-user-images/image-20240617230318360.png" alt="image-20240617230318360" style="zoom: 50%;" />
+
+    * Sparse:
+
+      <img src="/Users/johnnnysun/Library/Application Support/typora-user-images/image-20240617232713891.png" alt="image-20240617232713891" style="zoom:50%;" />
+
   * scale in PolyFEM: 1e-4 (change to m)
-  
+
 * **Add marks:**
 
   * The density of the marks?
   * The distribution of the marks? 
     * Grid of marks
-  
+  * How to add marks to the simulation?
+    * Choose a set of vertex for each mark, and calclate its mean?
+    * Don't know if it is a good choice.
+
+* **Sample from simulation result:**
+
+  * How?
+
+* **Research on each solver:**
+
+  * Not in a hurry, but go through all kinds of solvers.
+  * Reference Book: https://hplgit.github.io/fem-book/doc/pub/book/pdf/fem-book-4print-2up.pdf
+  * Questions:
+    * quadratic base element: quadratic basis functions, more accurate
+
 
 
 
 ## After set up real silicon model
 
 * Think about how to connect the model with the 3d print connector. 
-* Think about how to apply marks on the model and the shape of the marks
+* Think about how to apply marks on the model and the distribution of the marks.
+* Think about how two match the mark (index) with its position (xyz cordinate).
+  * First, for our easy case (pure stretching), this could be trivial
+  * Second, The original paper must have a way to do so.
+
+
+
+
+## FurtherMore
+
+* Compression: 
+  * Make a cube of material, compress it, record force for different displacements
+  * Reference: https://www.baecher.info/publication/mat_char_robosoft20/mat_char_robosoft20.pdf
+* 
+
+
+
+
 
 ### Idea
-
-Optimization? running so slow, what does these solvers do.
-
-Probably use python to generate json?
-
-Quasistatic, avoid oscillation when. strething
-
-quadratic base element: quadratic basis functions, more accurate
-
-finite element quadratic basis / linear basis
-
-
-
-
-
-​            "Eigen::PardisoLDLT",
-
-​            "Eigen::CholmodDecomposition"
-
-
-
-remove extra vertices with igl
-
-
-
-
-
-book: Introduction to Numerical Methods for Variational Problems

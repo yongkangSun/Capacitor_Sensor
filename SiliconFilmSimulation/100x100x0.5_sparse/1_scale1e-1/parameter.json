@@ -1,0 +1,48 @@
+{
+    "common": "../../common.json",
+
+    "time": {
+        "integrator": "ImplicitEuler",
+        "quasistatic": true,
+        "tend": 2.0,
+        "dt": 0.01
+    },
+
+    "geometry": [{
+        "mesh": "../../Data/100x100x0.5_sparse.msh",
+        "transformation": {
+            "scale": 0.1
+        },
+        "volume_selection": 2,
+        "surface_selection": [{
+            "id": 1,
+            "axis": "-y",
+            "position": 0.001,
+            "relative": true
+        }, {
+            "id": 2,
+            "axis": "y",
+            "position": 0.999,
+            "relative": true
+        }]
+    }],
+
+    "materials": {
+        "id": 2,
+        "type": "NeoHookean",
+        "E": 72.96,
+        "nu": 0.47,
+        "rho": 1e-3
+    },
+
+    "boundary_conditions": {
+            "rhs": [0, 0, 0],
+            "dirichlet_boundary": [{
+                "id": 1,
+                "value": [0, "-t * 2.5", 0]
+            }, {
+                "id": 2,
+                "value": [0, "t * 2.5", 0]
+            }]
+    }
+}

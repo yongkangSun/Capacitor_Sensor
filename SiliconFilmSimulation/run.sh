@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_dir="20x20_sparse/non-conductive"
+target_dir="100x100x0.5_sparse/0_scale1e-3"
 input_file="parameter.json"
 output_dir="result"
 

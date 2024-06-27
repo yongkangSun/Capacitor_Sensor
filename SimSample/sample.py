@@ -12,5 +12,5 @@ pure_vtx_pos = np.array(pure_vtx_pos)
 # print(pure_vtx_pos)
 
 for tets in pure_vtx_pos:
-    for v in t:
+    for v in tets:
         print(v)

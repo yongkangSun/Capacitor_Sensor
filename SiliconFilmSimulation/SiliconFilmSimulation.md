@@ -124,6 +124,80 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 
 
 
+### Arvi's Model with tetrahedra bump
+
+### Model Size
+
+* tetrahedra model size: 8.0 * 4.0 * 0.2  (cm) 
+
+* scale in PolyFEM: 0.01 (change to m)
+
+* Two density:
+
+  * Sparse: v
+
+    | points | tetrahedra | faces (boundary) |
+    | ------ | ---------- | ---------------- |
+    | 4149   | 12372      | 8294             |
+
+
+
+### Arvi's Model with tetrahedra bump (9 * 9) , 1
+
+### Model Size
+
+* tetrahedra model size: 10.0 * 5.0 * 0.1875  (cm) 
+
+* scale in PolyFEM: 0.01 (change to m)
+
+* Two density:
+
+  * Sparse: v
+
+    | points | tetrahedra | faces (boundary) |
+    | ------ | ---------- | ---------------- |
+    | 1960   | 5839       | 3916             |
+
+
+
+### Arvi's Model with tetrahedra bump (9 * 9) , 2
+
+### Model Size
+
+* tetrahedra model size: 10.0 * 5.0 * 0.2875  (cm) 
+
+* scale in PolyFEM: 0.01 (change to m)
+
+* Two density:
+
+  * Sparse: v
+
+    | points | tetrahedra | faces (boundary) |
+    | ------ | ---------- | ---------------- |
+    | 1362   | 3866       | 2720             |
+
+
+
+### Arvi's Model with tetrahedra bump (9 * 9) , 5
+
+### Model Size
+
+* tetrahedra model size: 10.0 * 5.0 * 0.5875  (cm) 
+
+* scale in PolyFEM: 0.01 (change to m)
+
+* Two density:
+
+  * Sparse: v
+
+    | points | tetrahedra | faces (boundary) |
+    | ------ | ---------- | ---------------- |
+    | 1699   | 5507       | 2953             |
+
+
+
+
+
 ## Requirement Change
 
 之后的工作要建立在一个设计好的带凸点的模型上，设计一下凸点的大小和分布，建模。

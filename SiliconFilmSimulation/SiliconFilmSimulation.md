@@ -150,6 +150,8 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 
 * scale in PolyFEM: 0.01 (change to m)
 
+* stretch & selection in x direction
+
 * Two density:
 
   * Sparse: v
@@ -168,6 +170,8 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 
 * scale in PolyFEM: 0.01 (change to m)
 
+* stretch & selection in x direction
+
 * Two density:
 
   * Sparse: v
@@ -185,6 +189,8 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 * tetrahedra model size: 10.0 * 5.0 * 0.5875  (cm) 
 
 * scale in PolyFEM: 0.01 (change to m)
+
+* stretch & selection in x direction
 
 * Two density:
 

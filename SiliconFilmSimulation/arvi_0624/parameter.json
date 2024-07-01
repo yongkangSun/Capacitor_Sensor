@@ -1,0 +1,54 @@
+{
+    "common": "../common.json",
+
+    "time": {
+        "integrator": "ImplicitEuler",
+        "quasistatic": true,
+        "tend": 2.0,
+        "dt": 0.002
+    },
+
+    "geometry": [{
+        "mesh": "../Data/sheet_5.msh",
+        "transformation": {
+            "scale": 0.01
+        },
+        "volume_selection": 2,
+        "surface_selection": [{
+            "id": 1,
+            "axis": "-x",
+            "position": 0.2,
+            "relative": true
+        }, {
+            "id": 2,
+            "axis": "x",
+            "position": 0.8,
+            "relative": true
+        }]
+    }],
+
+    "materials": {
+        "id": 2,
+        "type": "NeoHookean",
+        "E": 729600,
+        "nu": 0.47,
+        "rho": 1000
+    },
+
+    "output": {
+        "paraview": {
+            "skip_frame": 50
+        }
+    },
+
+    "boundary_conditions": {
+            "rhs": [0, 0, 0],
+            "dirichlet_boundary": [{
+                "id": 1,
+                "value": ["-t * 0.015", 0,  0]
+            }, {
+                "id": 2,
+                "value": ["t * 0.015", 0, 0]
+            }]
+    }
+}

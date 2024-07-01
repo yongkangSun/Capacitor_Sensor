@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_dir="arvi_bumpSheet"
+target_dir="arvi_0624"
 input_file="parameter.json"
 output_dir="result"
 

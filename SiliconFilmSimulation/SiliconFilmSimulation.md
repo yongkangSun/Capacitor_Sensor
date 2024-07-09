@@ -220,20 +220,6 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 
 
 
-
-
-## Requirement Change
-
-之后的工作要建立在一个设计好的带凸点的模型上，设计一下凸点的大小和分布，建模。
-
-制作倒膜，从而获得模具。
-
-把scanning的实验器材setup好，用成熟的纯硅胶做实验，验证流程。
-
-在新模型上完成simulation 以及tracking。
-
-
-
 ## Further work on simulation part
 
 * **Add marks:**
@@ -259,7 +245,6 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 ## After set up real silicon model
 
 * Think about how to connect the model with the 3d print connector. 
-* Think about how to apply marks on the model and the distribution of the marks.
 * Think about how two match the mark (index) with its position (xyz cordinate).
   * First, for our easy case (pure stretching), this could be trivial
   * Second, The original paper must have a way to do so.
@@ -272,18 +257,3 @@ Simulation of a toy demo of a silicon film, 20 x 20 x 1 (mm) with maximum tets' 
 * Compression: 
   * Make a cube of material, compress it, record force for different displacements
   * Reference: https://www.baecher.info/publication/mat_char_robosoft20/mat_char_robosoft20.pdf
-* 
-
-
-
-
-
-### Idea
-
-
-
-Today's plan:
-
-* Think about how to sample from the simulation result, implement a demo.
-
-* Check optitrack

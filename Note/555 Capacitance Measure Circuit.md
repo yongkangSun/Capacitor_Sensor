@@ -6,6 +6,8 @@
 
 ![image-20240709170541374](/Users/johnnnysun/Library/Application Support/typora-user-images/image-20240709170541374.png)
 
+
+
 ### NE555
 
 #### Truth table
@@ -16,8 +18,6 @@
 | > 1/3 VCC | < 2/3 VCC | Stay     |      |       |
 | < 1/3 VCC | < 2/3 VCC | 1        | 0    | 1     |
 | < 1/3 VCC | > 2/3 VCC | Unstable |      |       |
-
-
 
 #### Pin
 
@@ -50,9 +50,19 @@ There are still 1% to 3% of errors. We could eliminate it with a **linear regres
 
 #### Data Collection
 
+##### With Long Wire
+
 | Capacitor | Frequency  |
 | --------- | ---------- |
-| 0.0 uF    | 52.87 KHz  |
+| 0.0 uF    | 53.95 KHz  |
+| 1 pF      | 52.27 Khz  |
+| 3.3 pF    | 47.37 Khz  |
+| 5 pF      | 44.25 Khz  |
+| 10 pF     | 37.71 Khz  |
+| 47 pF     | 18.722 Khz |
+| 100 pF    | 10.35 Khz  |
+| 250 pF    | 4.898 Khz  |
+| 470 pF    | 2.878 Khz  |
 | 0.001 uF  | 1.3607 KHz |
 | 0.0022 uF | 604.1 Hz   |
 | 0.0033 uF | 398.7 Hz   |
@@ -66,6 +76,55 @@ There are still 1% to 3% of errors. We could eliminate it with a **linear regres
 | 0.15 uF   | 8.93 Hz    |
 
 
+
+| Capacitor | Frequency |
+| --------- | --------- |
+| 0.0 pF    | 52.07 Khz |
+| 5 pF      | 42.36 Khz |
+| 10 pF     | 36.43 Khz |
+| 47 pF     | 18.35 Khz |
+| 100 pF    | 10.08 Khz |
+| 470pF     | 2.891 Khz |
+| 1000 pF   | 1.281 Khz |
+| 2200 pF   | 594 Hz    |
+| 3300 pF   | 385 Hz    |
+| 4700 pF   | 288 Hz    |
+
+
+
+##### Without long wire
+
+| Capacitor | Frequency |
+| --------- | --------- |
+| 0.0 pF    | 51.95 Khz |
+| 10 pF     |           |
+| 47 pF     |           |
+| 100 pF    |           |
+| 470pF     |           |
+| 1000 pF   |           |
+| 2200 pF   |           |
+| 3300 pF   |           |
+| 4700 pF   |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+|           |           |
+
+ I think we could only trust 2 digit of the frequency reading. 
+
+
+
+## Procedure
+
+#### Useful button
+
+- Auto: on the top of the machine, automatically adjust the range
+- Measure: a button below the AUTO, select “measure all” in the list on the right side of the screen. This will provide the measurements of frequencies and everything.
 
 
 

@@ -77,18 +77,18 @@ There are still 1% to 3% of errors. We could eliminate it with a **linear regres
 
 
 
-| Capacitor | Frequency |
-| --------- | --------- |
-| 0.0 pF    | 52.07 Khz |
-| 5 pF      | 42.36 Khz |
-| 10 pF     | 36.43 Khz |
-| 47 pF     | 18.35 Khz |
-| 100 pF    | 10.08 Khz |
-| 470pF     | 2.891 Khz |
-| 1000 pF   | 1.281 Khz |
-| 2200 pF   | 594 Hz    |
-| 3300 pF   | 385 Hz    |
-| 4700 pF   | 288 Hz    |
+| Capacitor | Frequency (Hz) |         |      |      |
+| --------- | -------------- | ------- | ---- | ---- |
+| 0.0 pF    | 52.07 K        | 51.88 K |      |      |
+| 5 pF      | 42.36 Khz      |         |      |      |
+| 10 pF     | 36.43 Khz      |         |      |      |
+| 47 pF     | 18.35 Khz      |         |      |      |
+| 100 pF    | 10.08 Khz      |         |      |      |
+| 470pF     | 2.891 Khz      |         |      |      |
+| 1000 pF   | 1.281 Khz      |         |      |      |
+| 2200 pF   | 594 Hz         |         |      |      |
+| 3300 pF   | 385 Hz         |         |      |      |
+| 4700 pF   | 288 Hz         |         |      |      |
 
 
 

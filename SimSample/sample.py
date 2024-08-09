@@ -11,14 +11,24 @@ lagrange_tetra_cells = mesh.cells_dict["VTK_LAGRANGE_TETRAHEDRON"]
 vertices = mesh.points
 bump_idx_matrix = [[set() for _ in range(9)] for _ in range(9)]
 
-for tet in lagrange_tetra_cells:
+cnt = 0
+
+for i in range(lagrange_tetra_cells.shape[0]):
+    tet = lagrange_tetra_cells[i]
     is_bump = False
     for idx in tet:
         if vertices[idx][1] > 0:
             is_bump = True
             break
     if is_bump:
-        print("Yes")
+        mid_pt = np.array([0.0, 0.0, 0.0])
+        for idx in tet:
+            mid_pt += vertices[idx]
+        mid_pt /= 10
+        print(mid_pt)
+        cnt += 1
+
+print(cnt)
 
 
 

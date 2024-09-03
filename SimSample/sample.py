@@ -25,7 +25,8 @@ for i in range(lagrange_tetra_cells.shape[0]):
         for idx in tet:
             mid_pt += vertices[idx]
         mid_pt /= 10
-        print(mid_pt)
+
+        mid_pt
         cnt += 1
 
 print(cnt)

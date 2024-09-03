@@ -36,3 +36,19 @@ Yongkang Sun
   * go through all remembered tets, 
 
 * Frame number: 100
+
+
+
+
+
+After our fabrication last week, we have 4 samples with 0.2mm middle layer and 1 sample with 0.1mm middle layer. Their capacitance are as follow:
+
+| Batch      | Thickness | Capacitance |
+| ---------- | --------- | ----------- |
+| Last week: | Double    | 671 pF      |
+|            | Double    | 685 pF      |
+|            | Double    | 708 pF      |
+| Previous:  | Single    | 874 pF      |
+|            | Double    | 675 pF      |
+
+The standard deviation is no more than 2%.

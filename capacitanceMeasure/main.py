@@ -18,7 +18,7 @@ if __name__ == '__main__':
     R2 = 500000.0
 
     f_parasitic = 77500
-    f_measured = 2049
+    f_measured = 1930
 
     C_parasitic = calculate_capacitance(f_parasitic, R1, R2)
     print(f"Parasitic Capacitance: {C_parasitic * 1e12:.2f} pF")
